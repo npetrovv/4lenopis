@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+.header-head {
+	text-align: center;
+}
+.header-head h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 5em;
+	padding-top: 20px;
+}
+.header-head span {
+	color: #fff;
+}
+.top {
+	padding-top: 30px;
+}
+
+.top-item {
+	text-align: center;
+	padding: 10px;
+}
+.top-item:hover a{
+	display: block;
+}
+.top-item-info {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.top-item-info a {
+	font-size: 25px;
+	border: 1px #fff solid;
+	padding: 0 40px;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 15px; 
+	transition: all .25s ease;
+	display: none;
+}
+
+.top-item-info a:hover {
+	background: #fff;
+	color: #000;
+}
+
+.price {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 100;
+	padding-top: 15px;
+}
