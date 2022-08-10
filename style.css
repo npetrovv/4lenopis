@@ -58,6 +58,7 @@ body {
 .top-item-info a:hover {
 	background: #fff;
 	color: #000;
+	border: 1px #000 solid;
 }
 
 .top-item-info p {
@@ -90,7 +91,7 @@ body {
 .img-desription {
 	width: 250px;
 	height: auto;
-	animation: mymove 15s infinite;
+	animation: mymove 5s infinite;
 	position: relative;
 	top: 17%;
 	left: 10%;
