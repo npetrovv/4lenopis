@@ -2,9 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #000;
-  background-image: url(img/bg.png);
-  color: #fff;
-  
+	background-image: url(img/bg.png);
+	color: #fff;
 }
 .header-head {
 	text-align: center;
@@ -20,12 +19,17 @@ body {
 }
 .top {
 	padding-top: 20px;
+	height: 100%;
 }
 
 .top-item {
 	text-align: center;
 	padding: 10px;
-  height: 100%; 
+	height: 100%;
+	transition: all .25s ease;
+}
+.top-item:hover {
+	filter: drop-shadow(0px 0px 2px #FFFFFF);
 }
 .top-item:hover a{
 	display: block;
@@ -36,17 +40,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .top-item-info a {
 	font-size: 25px;
-	border: 1px #fff solid;
 	padding: 0 40px;
 	text-decoration: none;
+	background: #000;
 	color: #fff;
 	margin-top: 10px; 
 	transition: all .25s ease;
 	display: none;
+	position: absolute;
+	top: 80%;
 }
 
 .top-item-info a:hover {
@@ -55,9 +61,9 @@ body {
 }
 
 .top-item-info p {
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
+	color: #fff;
+	font-size: 20px;
+	margin: 0;
 }
 .price {
 	color: #fff;
@@ -66,16 +72,38 @@ body {
 
 }
 
+
+
 .description-text {
-  text-align: center;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 15px;	
 }
+
+
 .description-text span {
-  font-size: 23px;
-  font-weight: 700;
+	font-size: 23px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.img-desription {
+	width: 250px;
+	height: auto;
+	animation: mymove 15s infinite;
+	position: relative;
+	top: 17%;
+	left: 10%;
 }
 
 .shipping-bottom {
-  text-align: center;
-  color: #fff;
-  height: 25px;
+	text-align: center;
+	color: #000;
+	height: 25px;
+	margin-top: 25px;
+	background-color: #fff;
 }
+
+@keyframes mymove {
+  50% {transform: translateX(2em);}
+
